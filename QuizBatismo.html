@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre o Batismo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .question { margin-bottom: 1.5rem; }
+        .option { margin: 0.5rem 0; }
+        #result { margin-top: 2rem; }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6 text-center">Quiz sobre o Batismo</h1>
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question">
+                <p class="font-semibold">1. Qual é o significado principal do batismo?</p>
+                <label class="option"><input type="radio" name="q1" value="a"> a) Um evento social para reunir a comunidade.</label><br>
+                <label class="option"><input type="radio" name="q1" value="b"> b) Um símbolo de transformação, arrependimento e compromisso com Cristo.</label><br>
+                <label class="option"><input type="radio" name="q1" value="c"> c) Uma cerimônia para receber bênçãos materiais.</label><br>
+                <label class="option"><input type="radio" name="q1" value="d"> d) Um ritual exclusivo para líderes da igreja.</label>
+            </div>
+            <!-- Pergunta 2 -->
+            <div class="question">
+                <p class="font-semibold">2. O que a imersão na água durante o batismo representa?</p>
+                <label class="option"><input type="radio" name="q2" value="a"> a) Uma limpeza física do corpo.</label><br>
+                <label class="option"><input type="radio" name="q2" value="b"> b) A morte para a velha vida de pecado e o sepultamento com Cristo.</label><br>
+                <label class="option"><input type="radio" name="q2" value="c"> c) Uma celebração de entrada na igreja local.</label><br>
+                <label class="option"><input type="radio" name="q2" value="d"> d) Um gesto para receber dons espirituais imediatos.</label>
+            </div>
+            <!-- Pergunta 3 -->
+            <div class="question">
+                <p class="font-semibold">3. Qual versículo bíblico destaca que o batismo está ligado à salvação para quem crê?</p>
+                <label class="option"><input type="radio" name="q3" value="a"> a) Romanos 10:9.</label><br>
+                <label class="option"><input type="radio" name="q3" value="b"> b) Marcos 16:16.</label><br>
+                <label class="option"><input type="radio" name="q3" value="c"> c) Mateus 3:11.</label><br>
+                <label class="option"><input type="radio" name="q3" value="d"> d) Hebreus 4:15.</label>
+            </div>
+            <!-- Pergunta 4 -->
+            <div class="question">
+                <p class="font-semibold">4. Por que Jesus, sendo sem pecado, foi batizado por João Batista?</p>
+                <label class="option"><input type="radio" name="q4" value="a"> a) Para seguir uma tradição local.</label><br>
+                <label class="option"><input type="radio" name="q4" value="b"> b) Para mostrar respeito por João Batista.</label><br>
+                <label class="option"><input type="radio" name="q4" value="c"> c) Para servir como exemplo do caminho a ser seguido pelos cristãos.</label><br>
+                <label class="option"><input type="radio" name="q4" value="d"> d) Para iniciar seu ministério público.</label>
+            </div>
+            <!-- Pergunta 5 -->
+            <div class="question">
+                <p class="font-semibold">5. Qual é o papel do arrependimento no processo do batismo?</p>
+                <label class="option"><input type="radio" name="q5" value="a"> a) É um passo opcional sem impacto no batismo.</label><br>
+                <label class="option"><input type="radio" name="q5" value="b"> b) É fundamental, pois marca a decisão de abandonar o pecado e seguir a Deus.</label><br>
+                <label class="option"><input type="radio" name="q5" value="c"> c) É um ritual realizado apenas pelos líderes.</label><br>
+                <label class="option"><input type="radio" name="q5" value="d"> d) É um símbolo sem importância espiritual.</label>
+            </div>
+            <!-- Pergunta 6 -->
+            <div class="question">
+                <p class="font-semibold">6. Qual é uma característica do batismo na Nova Aliança estabelecida por Jesus?</p>
+                <label class="option"><input type="radio" name="q6" value="a"> a) Um ritual apenas para líderes religiosos.</label><br>
+                <label class="option"><input type="radio" name="q6" value="b"> b) A identificação com a morte e ressurreição de Cristo.</label><br>
+                <label class="option"><input type="radio" name="q6" value="c"> c) Uma prática do Antigo Testamento.</label><br>
+                <label class="option"><input type="radio" name="q6" value="d"> d) Um evento sem relação com a fé.</label>
+            </div>
+            <!-- Pergunta 7 -->
+            <div class="question">
+                <p class="font-semibold">7. Quem tem o direito de realizar o batismo?</p>
+                <label class="option"><input type="radio" name="q7" value="a"> a) Apenas os apóstolos originais de Jesus.</label><br>
+                <label class="option"><input type="radio" name="q7" value="b"> b) Qualquer pessoa que prega o evangelho e faz discípulos.</label><br>
+                <label class="option"><input type="radio" name="q7" value="c"> c) Somente o pastor principal da igreja.</label><br>
+                <label class="option"><input type="radio" name="q7" value="d"> d) Apenas pessoas com formação teológica.</label>
+            </div>
+            <!-- Pergunta 8 -->
+            <div class="question">
+                <p class="font-semibold">8. Quem pode ser batizado?</p>
+                <label class="option"><input type="radio" name="q8" value="a"> a) Qualquer pessoa, incluindo recém-nascidos.</label><br>
+                <label class="option"><input type="radio" name="q8" value="b"> b) Apenas membros de uma igreja específica.</label><br>
+                <label class="option"><input type="radio" name="q8" value="c"> c) Aqueles que creem, têm entendimento e expressam sua fé conscientemente.</label><br>
+                <label class="option"><input type="radio" name="q8" value="d"> d) Somente adultos com treinamento religioso.</label>
+            </div>
+            <!-- Pergunta 9 -->
+            <div class="question">
+                <p class="font-semibold">9. Qual é o aspecto comunitário do batismo?</p>
+                <label class="option"><input type="radio" name="q9" value="a"> a) O batismo isola o indivíduo da comunidade.</label><br>
+                <label class="option"><input type="radio" name="q9" value="b"> b) O batismo integra o indivíduo à comunidade de fé, sendo celebrado pela congregação.</label><br>
+                <label class="option"><input type="radio" name="q9" value="c"> c) O batismo é um evento privado sem relação com a comunidade.</label><br>
+                <label class="option"><input type="radio" name="q9" value="d"> d) O batismo ocorre sem a participação da igreja.</label>
+            </div>
+            <!-- Pergunta 10 -->
+            <div class="question">
+                <p class="font-semibold">10. Qual é um dos desafios relacionados ao batismo?</p>
+                <label class="option"><input type="radio" name="q10" value="a"> a) A dificuldade em encontrar locais para batismo.</label><br>
+                <label class="option"><input type="radio" name="q10" value="b"> b) A falta de líderes para realizar o batismo.</label><br>
+                <label class="option"><input type="radio" name="q10" value="c"> c) O risco de as pessoas verem o batismo apenas como um ritual formal.</label><br>
+                <label class="option"><input type="radio" name="q10" value="d"> d) A proibição de batizar novos membros.</label>
+            </div>
+            <!-- Pergunta 11 -->
+            <div class="question">
+                <p class="font-semibold">11. O que João Batista pregava como essencial para o batismo?</p>
+                <label class="option"><input type="radio" name="q11" value="a"> a) A obediência às leis do Antigo Testamento.</label><br>
+                <label class="option"><input type="radio" name="q11" value="b"> b) O arrependimento para a remissão dos pecados.</label><br>
+                <label class="option"><input type="radio" name="q11" value="c"> c) A participação em rituais diários.</label><br>
+                <label class="option"><input type="radio" name="q11" value="d"> d) A realização de boas obras para salvação.</label>
+            </div>
+            <!-- Pergunta 12 -->
+            <div class="question">
+                <p class="font-semibold">12. O que a emergência da água no batismo simboliza?</p>
+                <label class="option"><input type="radio" name="q12" value="a"> a) A purificação do corpo físico.</label><br>
+                <label class="option"><input type="radio" name="q12" value="b"> b) O renascimento para uma nova vida em Cristo.</label><br>
+                <label class="option"><input type="radio" name="q12" value="c"> c) A aceitação em uma nova religião.</label><br>
+                <label class="option"><input type="radio" name="q12" value="d"> d) O início de uma nova tradição.</label>
+            </div>
+            <!-- Pergunta 13 -->
+            <div class="question">
+                <p class="font-semibold">13. Qual é o papel da confissão no batismo?</p>
+                <label class="option"><input type="radio" name="q13" value="a"> a) Um ato privado guardado pelo batizando.</label><br>
+                <label class="option"><input type="radio" name="q13" value="b"> b) A expressão pública da fé em Jesus como Senhor.</label><br>
+                <label class="option"><input type="radio" name="q13" value="c"> c) Um ritual realizado apenas pelos líderes.</label><br>
+                <label class="option"><input type="radio" name="q13" value="d"> d) Uma prática sem relação com a fé.</label>
+            </div>
+            <!-- Pergunta 14 -->
+            <div class="question">
+                <p class="font-semibold">14. O que a palavra japonesa "kangae naoshi" reflete no contexto do batismo?</p>
+                <label class="option"><input type="radio" name="q14" value="a"> a) A celebração de uma nova tradição cultural.</label><br>
+                <label class="option"><input type="radio" name="q14" value="b"> b) O repensar da vida à luz do amor e da verdade de Deus.</label><br>
+                <label class="option"><input type="radio" name="q14" value="c"> c) A prática de rituais japoneses no batismo.</label><br>
+                <label class="option"><input type="radio" name="q14" value="d"> d) A mudança de religião sem compromisso espiritual.</label>
+            </div>
+            <!-- Pergunta 15 -->
+            <div class="question">
+                <p class="font-semibold">15. Qual é a relação entre o batismo e a Grande Comissão?</p>
+                <label class="option"><input type="radio" name="q15" value="a"> a) O batismo é um evento opcional na Grande Comissão.</label><br>
+                <label class="option"><input type="radio" name="q15" value="b"> b) O batismo é um mandamento central para fazer discípulos, conforme Mateus 28:19.</label><br>
+                <label class="option"><input type="radio" name="q15" value="c"> c) O batismo não é mencionado na Grande Comissão.</label><br>
+                <label class="option"><input type="radio" name="q15" value="d"> d) O batismo substitui a pregação do evangelho.</label>
+            </div>
+            <button type="button" onclick="checkAnswers()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver Resultado</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: 'b', q2: 'b', q3: 'b', q4: 'c', q5: 'b',
+                q6: 'b', q7: 'b', q8: 'c', q9: 'b', q10: 'c',
+                q11: 'b', q12: 'b', q13: 'b', q14: 'b', q15: 'b'
+            };
+            const explanations = {
+                q1: 'O batismo é descrito como um símbolo de transformação, arrependimento e compromisso com Cristo (Página 1).',
+                q2: 'A imersão representa a morte para a velha vida de pecado e o sepultamento com Cristo, conforme Romanos 6:3-4 (Página 7).',
+                q3: 'Marcos 16:16 afirma que "quem crer e for batizado será salvo" (Página 5).',
+                q4: 'Jesus, sem pecado, foi batizado para servir de exemplo aos cristãos (Página 6, Hebreus 4:15).',
+                q5: 'O arrependimento é essencial, marcando a decisão de abandonar o pecado (Página 7, Atos 2:38).',
+                q6: 'Na Nova Aliança, o batismo simboliza a identificação com a morte e ressurreição de Cristo (Página 8, Romanos 6:4).',
+                q7: 'Quem prega o evangelho e faz discípulos pode batizar, conforme Mateus 28:19 (Página 11).',
+                q8: 'Podem ser batizados aqueles que creem e expressam sua fé conscientemente (Página 11, Marcos 16:16).',
+                q9: 'O batismo integra o indivíduo à comunidade de fé, sendo uma celebração coletiva (Página 8).',
+                q10: 'Um desafio é o risco de ver o batismo como apenas um ritual formal (Página 8).',
+                q11: 'João Batista pregava o arrependimento para a remissão dos pecados (Página 9).',
+                q12: 'A emergência da água simboliza o renascimento para uma nova vida em Cristo (Página 7, Romanos 6:3-4).',
+                q13: 'A confissão é a expressão pública da fé em Jesus como Senhor (Página 10, Romanos 10:9).',
+                q14: 'A palavra japonesa "kangae naoshi" reflete o repensar da vida à luz do amor e da verdade de Deus (Página 3).',
+                q15: 'O batismo é um mandamento central na Grande Comissão, conforme Mateus 28:19 (Página 4).'
+            };
+            let score = 0;
+            let resultText = '<h2 class="text-xl font-bold mb-4">Resultado do Quiz</h2>';
+            for (let i = 1; i <= 15; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                const questionDiv = document.querySelector(`.question:nth-child(${i})`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    score++;
+                    questionDiv.classList.add('bg-green-100');
+                } else {
+                    questionDiv.classList.add('bg-red-100');
+                }
+                resultText += `<p><strong>Pergunta ${i}:</strong> Resposta correta: ${answers[`q${i}`]}. ${explanations[`q${i}`]}</p>`;
+            }
+            resultText = `<p class="text-lg">Você acertou ${score} de 15 perguntas!</p>` + resultText;
+            document.getElementById('result').innerHTML = resultText;
+            document.getElementById('result').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
